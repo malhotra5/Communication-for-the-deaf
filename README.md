@@ -4,7 +4,7 @@ This application helps the deaf communicate with people who do not understand AS
   askdfjaksldjflaksdfjakdsjf 
 *djflksdjlfkjkasdkflsdjf* adsfadsf
 
-'pip install '
+`pip install `
 
 
 
