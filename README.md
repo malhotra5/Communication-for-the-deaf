@@ -1,5 +1,10 @@
 # Communication-for-the-deaf
 This application helps the deaf communicate with people who do not understand ASL (American Sign Language)
 
-  askdfjaksldjflaksdfjakdsjf
+  askdfjaksldjflaksdfjakdsjf 
 *djflksdjlfkjkasdkflsdjf* adsfadsf
+
+'pip install '
+
+
+
