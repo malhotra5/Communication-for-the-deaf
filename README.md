@@ -40,8 +40,24 @@ To classify images of sign language, run the following command -
 To use the webcam to classify images in a live video feed, run the following command. P.S - This program can also run using the Python IDE
 
     Python classify_webcam.py
+    
+Keep your hand in the rectangle shown in the program for detecting sign language.
 ## How it works
-The program uses the grayscaled images in the folder *'dataset'* to train the neural network. It makes an array of the pixel vaules in the image. Then, it performs distortions over the images for variations and better training results. 
+The program uses the grayscaled images in the folder *'dataset'* to train the neural network. It makes an array of the pixel vaules in the image. Then, it performs distortions over the images for variations and better training results. It splits the dataset into different batches for  mini-batch SGD (stochastic gradient descent). All the information regarding them can be found at Google's machine learning crash course here https://developers.google.com/machine-learning/crash-course/reducing-loss/stochastic-gradient-descent.
+All the training takes place in a TensorFlow sesssion. A results of the training is stored in a *'graph'*. The graph is responsible for the final classification results. 
+
+Don't fall asleep yet. It gets interesting.
+
+Once the output of the training has been stored in the graph, the program classify.py used the graph to classify images. It returns a confidence factor or score for the image. The program webcam_classify.py uses the webcam to classify a live video feed in sentences. If the graph has a high confidence factor for a sign made in front of the camera, for a certain period of time, the letter is considered to be part of the sentence. It has various abilites such as deleting letter, putting spaces for new words and detecting when no sign is being made.
+
+Results - 
+Running classify_webcam.py over an image of the letter D in sign language.\
+![GitHub Logo](/Results/classify_image_result.jpg)
+
+## Built with
+* Python3
+## Acknowledgments
+All my team members for the hackathon in which this project was built.
 
 
 
