@@ -11,9 +11,13 @@ The program runs using Python3. It can be downloaded at https://www.python.org/
 
 ## Installation
 You can download the wheel files for the prerequisite Python3 modules at https://www.lfd.uci.edu/~gohlke/pythonlibs/. 
-To install run - 
+
+To install run -
+
 `pip install WheelFileName.whl`
+
 Alternative - 
+
  `pip install tensorflow
   pip install opencv-python
   pip install numpy
