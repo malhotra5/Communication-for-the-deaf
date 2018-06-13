@@ -53,7 +53,7 @@ Once the output of the training has been stored in the graph, the program classi
 Results - 
 
 Running classify_webcam.py over an image of the letter D in sign language.\
-![GitHub Logo](/Results/classify_image_result.png)
+![GitHub Logo](/Results/classifyImage_result.png)
 
 ## Built with
 * Python3
