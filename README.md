@@ -8,7 +8,6 @@ The program runs using Python3. It can be downloaded at https://www.python.org/
 * OpenCV (image processing module)
 * NumPy (support for large multi-dimensional arrays and matrices)
 * Matplotlib (Plotting library and numerical mathematics extension  of NumPy)
-
 ## Installation
 You can download the wheel files for the prerequisite Python3 modules at https://www.lfd.uci.edu/~gohlke/pythonlibs/. 
 
@@ -33,8 +32,14 @@ To train the neural network, run the following Python script on the terminal wit
     --output_graph=logs/trained_graph.pb \
     --output_labels=logs/trained_labels.txt \
     --image_dir=./dataset
-  
 ## Running the algorithm
-You can run the following program both at the terminal and with the the Python3 IDE. Use the following command on the terminal.
-`Python classify_webcam.py`
+You can run the following commands both at the terminal.
+To classify images of sign language, run the following command -
+
+    python3 classify.py path/to/image.jpg
+To use the webcam to classify images in a live video feed, run the following command. P.S - This program can also run using the Python IDE
+
+
+    Python classify_webcam.py
+
 ## How it works
