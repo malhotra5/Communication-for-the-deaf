@@ -22,7 +22,7 @@ Alternative -
     pip install numpy
     pip install matplotlib
 
-To train the neural network, run the following Python script on the terminal with the following hyper-parameters.
+To train the neural network, run the Python script train.py on the terminal with the following hyper-parameters.
 
     python3 train.py \
     --bottleneck_dir=logs/bottlenecks \
@@ -33,13 +33,19 @@ To train the neural network, run the following Python script on the terminal wit
     --output_labels=logs/trained_labels.txt \
     --image_dir=./dataset
 ## Running the algorithm
-You can run the following commands both at the terminal.
+You can run the following commands both at the terminal. I have provided the trained the trained graph and other prerequisites to run the following program. If you want to retrain the model, delete the folder *'logs'*. Then run the command above to train. All the commands below will only run if the prerequisites above have been satisfied. 
 To classify images of sign language, run the following command -
 
     python3 classify.py path/to/image.jpg
 To use the webcam to classify images in a live video feed, run the following command. P.S - This program can also run using the Python IDE
 
-
     Python classify_webcam.py
-
 ## How it works
+The program uses the grayscaled images in the folder *'dataset'* to train the neural network. It makes an array of the pixel vaules in the image. Then, it performs distortions over the images for variations and better training results. 
+
+
+
+
+
+
+
