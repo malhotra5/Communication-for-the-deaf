@@ -48,7 +48,7 @@ All the training takes place in a TensorFlow sesssion. A results of the training
 
 Don't fall asleep yet. It gets interesting.
 
-Once the output of the training has been stored in the graph, the program classify.py used the graph to classify images. It returns a confidence factor or score for the image. The program webcam_classify.py uses the webcam to classify a live video feed in sentences. If the graph has a high confidence factor for a sign made in front of the camera, for a certain period of time, the letter is considered to be part of the sentence. The program can perform actions such as deleting letter, putting spaces for new words and detecting when no sign is being made.
+Once the output of the training has been stored in the graph, the program classify.py used the graph to classify images. It returns a confidence factor or score for the image compared to every letter, with results ranked in order from highest to lowest. The program webcam_classify.py uses the webcam to classify a live video feed in sentences. If the graph has a high confidence factor for a sign made in front of the camera, for a certain period of time, the letter is considered to be part of the sentence. The program can perform actions such as deleting letter, putting spaces for new words and detecting when no sign is being made.
 
 Results - 
 
