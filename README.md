@@ -4,7 +4,7 @@ This local application converts sign language to text. Its purpose is to help th
 Clone the repository. I have uploaded the trained graph from TensorFlow which can be used for sign language classification. Another option would be to use a Python script to train the neural network on your own hyper-parameters.
 ## Prerequisites
 The program runs using Python3. It can be downloaded at https://www.python.org/
-* TensorFlow ( a symbolic math library 
+* TensorFlow (a symbolic math library) 
 * OpenCV (image processing module)
 * NumPy (support for large multi-dimensional arrays and matrices)
 * Matplotlib (Plotting library and numerical mathematics extension  of NumPy)
